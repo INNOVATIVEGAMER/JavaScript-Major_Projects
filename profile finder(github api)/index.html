@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/cyborg/bootstrap.min.css"
+    />
+    <title>Profile Finder | Github</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark mb-4">
+      <div class="container">
+        <a href="#" class="navbar-brand">Profile Finder (Github)</a>
+      </div>
+    </nav>
+
+    <div class="container searchContainer">
+      <div class="card border-info text-white search">
+        <div class="card-header">
+          <h4>Search Github Users</h4>
+        </div>
+        <div class="card-body">
+          <p class="lead">Enter username to fetch profile and repos of user</p>
+          <input
+            type="text"
+            id="UserName"
+            class="form-control border border-primary"
+            placeholder="Enter Username..."
+          />
+        </div>
+      </div>
+      <hr class="bg-white" />
+      <div id="profile"></div>
+      <h4 class="bg-light text-white border border-info rounded p-2 pl-3 my-3">
+        Latest Repos
+      </h4>
+      <div id="repos" class="border border-success rounded"></div>
+    </div>
+
+    <footer
+      class="bg-black border-top border-bottom border-white text-white p-3 text-center mt-5 mb-3"
+    >
+      Profile Finder (Github) &copy; 2020
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./github.js"></script>
+    <script src="./ui.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
