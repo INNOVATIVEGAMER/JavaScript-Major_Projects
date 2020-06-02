@@ -8,8 +8,6 @@ Submit.addEventListener("click", ShowContent);
 function ShowContent(e) {
   const state = document.getElementById("State").value;
   const district = document.getElementById("District").value;
-  document.getElementById("State").value = "";
-  document.getElementById("District").value = "";
 
   if (district === "" && state === "") {
     Corona.GetIndiasData()
